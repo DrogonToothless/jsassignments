@@ -10,16 +10,16 @@
 <body>
     <h1 style="text-align: center; font-size: 50px;">Bidding App</h1>
     <section class="bidding-app">
-        <div class="user-one-bids"></div>
-        <div class="user-two-bids"></div>
+        <div id="user-one-bids"></div>
+        <div id="user-two-bids"></div>
         <div class="bids-placer">
             <div class="bidder-one">
-                <input type="number" placeholder="Place Bid">
-                <button onclick="placeBid(one)">Place Bid</button>
+                <input type="number" placeholder="Place Bid" id="bid-one">
+                <button onclick="placeBidOne()">Place Bid</button>
             </div>
             <div class="bidder-two">
-                <input type="number" placeholder="Place Bid">
-                <button onclick="placeBid(two)">Place Bid</button>
+                <input type="number" placeholder="Place Bid" id="bid-two">
+                <button onclick="placeBidTwo()">Place Bid</button>
             </div>
         </div>
     </section>

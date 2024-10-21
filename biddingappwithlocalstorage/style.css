@@ -6,30 +6,50 @@
     width: 100%;
     border: 2px solid rgb(171, 171, 171);
 }
-.user-one-bids {
+#user-one-bids {
     width: 100%;
     height: 50px;
     border-bottom: 2px solid rgb(171, 171, 171);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
 }
-.user-two-bids {
+#user-one-bids p {
+    margin: 0;
+    padding-right: 5px;
+    font-size: 25px;
+}
+#user-two-bids {
     width: 100%;
     height: 50px;
     border-bottom: 2px solid rgb(171, 171, 171);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+#user-two-bids p {
+    margin: 0;
+    padding-right: 5px;
+    font-size: 25px;
 }
 .bids-placer {
     width: 100%;
     height: 100px;
     display: grid;
     grid-template-areas: "one two";
-    padding-top: 25px;
 }
 .bidder-one {
     display: flex;
     flex-direction: column;
     grid-area: one;
+    border-right: 2px solid rgb(171, 171, 171);
+    width: 100%;
+    padding-top: 25px;
 }
 .bidder-two {
     display: flex;
     flex-direction: column;
     grid-area: two;
+    width: 100%;
+    padding-top: 25px;
 }
