@@ -3,5 +3,33 @@
     box-sizing: border-box;
 }
 .bidding-app {
-    
+    width: 100%;
+    border: 2px solid rgb(171, 171, 171);
+}
+.user-one-bids {
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgb(171, 171, 171);
+}
+.user-two-bids {
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgb(171, 171, 171);
+}
+.bids-placer {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-areas: "one two";
+    padding-top: 25px;
+}
+.bidder-one {
+    display: flex;
+    flex-direction: column;
+    grid-area: one;
+}
+.bidder-two {
+    display: flex;
+    flex-direction: column;
+    grid-area: two;
 }
