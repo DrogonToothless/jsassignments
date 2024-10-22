@@ -1,11 +1,7 @@
 class Stack { 
-
-      // Array is used to implement stack 
-    constructor() 
-    { 
+    constructor() { 
         this.items = []; 
     } 
-  
     push(item) {
         this.items.push(item);
     }
@@ -20,22 +16,19 @@ class Stack {
     size() {
         return this.items.length;
     }
-
     peek() {
         return this.items[this.items.length - 1];
     }
-
     solvePostfix(postfixStr) {
         function isNumeric(n) {
             return !isNaN(parseFloat(n)) && isFinite(n);
         }
-
         this.items = [];
         const postfix = postfixStr.split(" ");
         for (var i = 0; i < postfix.length; i++) {
             if (isNumeric(postfix[i])) {
                 this.push(postfix[i]);
-            } else { // for operators (non-numeric)
+            } else {
                 if (this.size() < 2) {
                     return undefined;
                 }
@@ -54,14 +47,11 @@ class Stack {
                 }
             }
         }
-        // there should only be one number on the stack for our solution
         if (this.size() > 1) {
             return undefined;
         } else {
             return this.pop();
         }
     }
-
 }
-
 module.exports.Stack = Stack;
